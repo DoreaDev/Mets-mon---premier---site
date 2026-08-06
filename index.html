@@ -2,12 +2,85 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - DoreaDev</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            background: rgba(0,0,0,0.4);
+            padding: 50px 30px;
+            border-radius: 25px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        .photo {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 5px solid white;
+            object-fit: cover;
+            margin-bottom: 25px;
+        }
+        h1 { font-size: 2.5em; margin-bottom: 10px; }
+        p { font-size: 1.2em; margin: 8px 0; }
+        .boutons { margin: 30px 0; }
+        .btn {
+            display: inline-block;
+            background: white;
+            color: #764ba2;
+            padding: 14px 28px;
+            margin: 8px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn:hover { transform: scale(1.05); background: #ddd; }
+        .section {
+            margin-top: 50px;
+            text-align: left;
+            background: rgba(255,255,255,0.1);
+            padding: 25px;
+            border-radius: 15px;
+        }
+        .section h2 { text-align: center; margin-bottom: 20px; }
+        .projet { margin-bottom: 15px; }
+    </style>
 </head>
 <body>
-    <h1>Salut, je suis Dorea 👋</h1>
-    <p>Étudiant en Génie Logiciel à Yaoundé.</p>
-    <p>Objectif : Bourse d'études en Chine 🇨🇳</p>
-    <p>Bienvenue sur mon premier site !</p>
+    <div class="container">
+        <img src="https://via.placeholder.com/160" alt="Photo de Dorea" class="photo">
+        <h1>Salut, je suis Dorea 👋</h1>
+        <p>Étudiant en Génie Logiciel à Yaoundé.</p>
+        <p>Objectif : Bourse d'études en Chine 🇨🇳</p>
+        
+        <div class="boutons">
+            <a href="https://github.com/doreadev" class="btn">Mon GitHub</a>
+            <a href="mailto:ton.email@gmail.com" class="btn">Me Contacter</a>
+        </div>
+
+        <div class="section">
+            <h2>🚀 Mes Projets</h2>
+            <div class="projet">
+                <b>1. Portfolio Website</b>
+                <p>Mon premier site web déployé avec GitHub Pages. Fait en HTML + CSS.</p>
+            </div>
+            <div class="projet">
+                <b>2. [Ajoute ton prochain projet ici]</b>
+                <p>Décris ton projet ici plus tard.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
