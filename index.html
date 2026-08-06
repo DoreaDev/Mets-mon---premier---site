@@ -47,7 +47,37 @@
             padding: 25px;
             border-radius: 15px;
         }
-        .section h2 { text-align: center; margin-bottom: 20px; }
+        .section h2 { text-align: center; margin-bottom: 20px; }.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.skill {
+    background: #7c3aed;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.skill:hover {
+    background: #5b21b6;
+    transform: scale(1.05);
+}
+.contact-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.contact-links .btn {
+    background: #2563eb;
+}
+.contact-links .btn:hover {
+    background: #1e40af;
+}
     </style>
 </head>
 <body>
@@ -68,5 +98,24 @@
             <p><b>1. Portfolio Website</b><br>Mon premier site web déployé avec GitHub Pages.</p>
         </div>
     </div>
+    <div class="section">
+    <h2>Mes Compétences</h2>
+    <div class="skills">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">Python</span>
+        <span class="skill">Git & GitHub</span>
+        <span class="skill">Bases de données</span>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Contact</h2>
+    <p>N'hésitez pas à me contacter :</p>
+    <div class="contact-links">
+        <a href="mailto:abessolodorea@gmail.com" class="btn">Email</a>
+        <a href="https://wa.me/237657802142" class="btn">WhatsApp</a>
+    </div>
+</div>
 </body>
 </html>
